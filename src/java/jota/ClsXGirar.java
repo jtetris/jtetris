@@ -11,10 +11,9 @@ import java.util.*;
  *
  * @author Administrador
  */
-public class Izquierda {
+public class ClsXGirar {
 
-    public String[][] izquierda(String[][] Jota) {
-
+    public String[][] girar(String[][] Jota) {
         //los null de la ficha de cabeza
         if (Jota[0][0] == null && Jota[0][2] == null && Jota[1][0] == null && Jota[1][2] == null && Jota[2][2] == null) {//posicion inicial _|
             //Posicion que llega en jota de cabeza
@@ -28,7 +27,7 @@ public class Izquierda {
             for (int i = 0; i < strposicion1.length; i++) {
                 intposicion1[i] = Integer.parseInt(strposicion1[i]);
             }
-            intposicion1[0] = intposicion1[0] + 0;
+            intposicion1[0] = intposicion1[0] + 1;
             intposicion1[1] = intposicion1[1] - 1;
             String xposicion1 = Arrays.toString(intposicion1);
             posicion1 = xposicion1.replaceAll("\\[|\\]|\\s", "");
@@ -38,7 +37,7 @@ public class Izquierda {
             for (int i = 0; i < strposicion2.length; i++) {
                 intposicion2[i] = Integer.parseInt(strposicion2[i]);
             }
-            intposicion2[0] = intposicion2[0] + 0;
+            intposicion2[0] = intposicion2[0] + 1;
             intposicion2[1] = intposicion2[1] - 1;
             String xposicion2 = Arrays.toString(intposicion2);
             posicion2 = xposicion2.replaceAll("\\[|\\]|\\s", "");
@@ -49,7 +48,7 @@ public class Izquierda {
                 intposicion3[i] = Integer.parseInt(strposicion3[i]);
             }
             intposicion3[0] = intposicion3[0] + 0;
-            intposicion3[1] = intposicion3[1] - 1;
+            intposicion3[1] = intposicion3[1] + 0;
             String xposicion3 = Arrays.toString(intposicion3);
             posicion3 = xposicion3.replaceAll("\\[|\\]|\\s", "");
 
@@ -59,14 +58,14 @@ public class Izquierda {
                 intposicion4[i] = Integer.parseInt(strposicion4[i]);
             }
             intposicion4[0] = intposicion4[0] + 0;
-            intposicion4[1] = intposicion4[1] - 1;
+            intposicion4[1] = intposicion4[1] + 2;
             String xposicion4 = Arrays.toString(intposicion4);
             posicion4 = xposicion4.replaceAll("\\[|\\]|\\s", "");
             //posicion resultante en jota acostada a la izquieda
             String[][] ficha = {
-                {null, posicion1, null},
-                {null, posicion2, null},
-                {posicion4, posicion3, null}
+                {null, null, null},
+                {posicion1, null, null},
+                {posicion2, posicion3, posicion4}
             };
             Jota = ficha;
 
@@ -83,8 +82,8 @@ public class Izquierda {
             for (int i = 0; i < strposicion1.length; i++) {
                 intposicion1[i] = Integer.parseInt(strposicion1[i]);
             }
-            intposicion1[0] = intposicion1[0] + 0;
-            intposicion1[1] = intposicion1[1] - 1;
+            intposicion1[0] = intposicion1[0] - 1;
+            intposicion1[1] = intposicion1[1] + 2;
             String xposicion1 = Arrays.toString(intposicion1);
             posicion1 = xposicion1.replaceAll("\\[|\\]|\\s", "");
 
@@ -93,8 +92,8 @@ public class Izquierda {
             for (int i = 0; i < strposicion2.length; i++) {
                 intposicion2[i] = Integer.parseInt(strposicion2[i]);
             }
-            intposicion2[0] = intposicion2[0] + 0;
-            intposicion2[1] = intposicion2[1] - 1;
+            intposicion2[0] = intposicion2[0] - 2;
+            intposicion2[1] = intposicion2[1] + 1;
             String xposicion2 = Arrays.toString(intposicion2);
             posicion2 = xposicion2.replaceAll("\\[|\\]|\\s", "");
 
@@ -103,8 +102,8 @@ public class Izquierda {
             for (int i = 0; i < strposicion3.length; i++) {
                 intposicion3[i] = Integer.parseInt(strposicion3[i]);
             }
-            intposicion3[0] = intposicion3[0] + 0;
-            intposicion3[1] = intposicion3[1] - 1;
+            intposicion3[0] = intposicion3[0] - 1;
+            intposicion3[1] = intposicion3[1] + 0;
             String xposicion3 = Arrays.toString(intposicion3);
             posicion3 = xposicion3.replaceAll("\\[|\\]|\\s", "");
 
@@ -120,9 +119,9 @@ public class Izquierda {
 
             //posicion resultante en jota depie
             String[][] ficha = {
-                {null, null, null},
-                {posicion1, null, null},
-                {posicion2, posicion3, posicion4}
+                {null, posicion2, posicion1},
+                {null, posicion3, null},
+                {null, posicion4, null}
             };
             Jota = ficha;
 
@@ -139,8 +138,8 @@ public class Izquierda {
             for (int i = 0; i < strposicion1.length; i++) {
                 intposicion1[i] = Integer.parseInt(strposicion1[i]);
             }
-            intposicion1[0] = intposicion1[0] + 0;
-            intposicion1[1] = intposicion1[1] - 1;
+            intposicion1[0] = intposicion1[0] + 1;
+            intposicion1[1] = intposicion1[1] + 0;
             String xposicion1 = Arrays.toString(intposicion1);
             posicion1 = xposicion1.replaceAll("\\[|\\]|\\s", "");
 
@@ -150,7 +149,7 @@ public class Izquierda {
                 intposicion2[i] = Integer.parseInt(strposicion2[i]);
             }
             intposicion2[0] = intposicion2[0] + 0;
-            intposicion2[1] = intposicion2[1] - 1;
+            intposicion2[1] = intposicion2[1] + 1;
             String xposicion2 = Arrays.toString(intposicion2);
             posicion2 = xposicion2.replaceAll("\\[|\\]|\\s", "");
 
@@ -159,8 +158,8 @@ public class Izquierda {
             for (int i = 0; i < strposicion3.length; i++) {
                 intposicion3[i] = Integer.parseInt(strposicion3[i]);
             }
-            intposicion3[0] = intposicion3[0] + 0;
-            intposicion3[1] = intposicion3[1] - 1;
+            intposicion3[0] = intposicion3[0] - 1;
+            intposicion3[1] = intposicion3[1] + 0;
             String xposicion3 = Arrays.toString(intposicion3);
             posicion3 = xposicion3.replaceAll("\\[|\\]|\\s", "");
 
@@ -169,16 +168,16 @@ public class Izquierda {
             for (int i = 0; i < strposicion4.length; i++) {
                 intposicion4[i] = Integer.parseInt(strposicion4[i]);
             }
-            intposicion4[0] = intposicion4[0] + 0;
+            intposicion4[0] = intposicion4[0] - 2;
             intposicion4[1] = intposicion4[1] - 1;
             String xposicion4 = Arrays.toString(intposicion4);
             posicion4 = xposicion4.replaceAll("\\[|\\]|\\s", "");
 
             //posicion resultante en jota acostada a la derecha
             String[][] ficha = {
-                {null, posicion2, posicion1},
-                {null, posicion3, null},
-                {null, posicion4, null}
+                {posicion4, posicion3, posicion2},
+                {null, null, posicion1},
+                {null, null, null}
             };
             Jota = ficha;
 
@@ -195,7 +194,7 @@ public class Izquierda {
             for (int i = 0; i < strposicion1.length; i++) {
                 intposicion1[i] = Integer.parseInt(strposicion1[i]);
             }
-            intposicion1[0] = intposicion1[0] + 0;
+            intposicion1[0] = intposicion1[0] - 1;
             intposicion1[1] = intposicion1[1] - 1;
             String xposicion1 = Arrays.toString(intposicion1);
             posicion1 = xposicion1.replaceAll("\\[|\\]|\\s", "");
@@ -205,7 +204,7 @@ public class Izquierda {
             for (int i = 0; i < strposicion2.length; i++) {
                 intposicion2[i] = Integer.parseInt(strposicion2[i]);
             }
-            intposicion2[0] = intposicion2[0] + 0;
+            intposicion2[0] = intposicion2[0] + 1;
             intposicion2[1] = intposicion2[1] - 1;
             String xposicion2 = Arrays.toString(intposicion2);
             posicion2 = xposicion2.replaceAll("\\[|\\]|\\s", "");
@@ -215,8 +214,8 @@ public class Izquierda {
             for (int i = 0; i < strposicion3.length; i++) {
                 intposicion3[i] = Integer.parseInt(strposicion3[i]);
             }
-            intposicion3[0] = intposicion3[0] + 0;
-            intposicion3[1] = intposicion3[1] - 1;
+            intposicion3[0] = intposicion3[0] + 2;
+            intposicion3[1] = intposicion3[1] + 0;
             String xposicion3 = Arrays.toString(intposicion3);
             posicion3 = xposicion3.replaceAll("\\[|\\]|\\s", "");
 
@@ -225,16 +224,16 @@ public class Izquierda {
             for (int i = 0; i < strposicion4.length; i++) {
                 intposicion4[i] = Integer.parseInt(strposicion4[i]);
             }
-            intposicion4[0] = intposicion4[0] + 0;
-            intposicion4[1] = intposicion4[1] - 1;
+            intposicion4[0] = intposicion4[0] + 2;
+            intposicion4[1] = intposicion4[1] + 0;
             String xposicion4 = Arrays.toString(intposicion4);
             posicion4 = xposicion4.replaceAll("\\[|\\]|\\s", "");
 
             //posicion resultante en jota de cabeza
             String[][] ficha = {
-                {posicion4, posicion3, posicion2},
-                {null, null, posicion1},
-                {null, null, null}
+                {null, posicion1, null},
+                {null, posicion2, null},
+                {posicion4, posicion3, null}
             };
             Jota = ficha;
         }

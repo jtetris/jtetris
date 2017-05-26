@@ -7,6 +7,8 @@ package jota;
 
 import java.util.*;
 import java.lang.*;
+import jdk.nashorn.internal.parser.JSONParser;
+
 
 /**
  *
@@ -17,18 +19,18 @@ class Jota {
     public static void main(String args[]) {
         System.out.println("Hello, World!");
         Jota re = new Jota();
-        Girar re1 = new Girar();
-        Izquierda re2 = new Izquierda();
-        Derecha re3 = new Derecha();
-        Bajar re4 = new Bajar();
+        ClsXGirar re1 = new ClsXGirar();
+        ClsXIzquierda re2 = new ClsXIzquierda();
+        ClsXDerecha re3 = new ClsXDerecha();
+        ClsXBajar re4 = new ClsXBajar();
         //Variable bajar debe ser traida desde un objeto del tablero que calcula que tanto puede caer la ficha
-        int bajar = 20;
+        int bajar = -20;
         String entrada;
         //variable solicitud debe ser traida desde un objeto del tablero que indique la accion que desea q se tome en la ficha
-        String solicitud = "girar";//esta es la entrada, descomentaree cualquiera de las 4 para q vea lo q hace
-        //String solicitud = "bajar";
-        //String solicitud = "izquierda";        
-        //String solicitud = "derecha";
+       // String solicitud = "girar";//esta es la entrada, descomentaree cualquiera de las 4 para q vea lo q hace
+       // String solicitud = "bajar";
+       // String solicitud = "izquierda";        
+        String solicitud = "derecha";
         entrada = solicitud;
         //se inicializa la ficha en la posicion por defecto antes de realizarle algun movimiento
         String[][] Jota = re.ini();
@@ -81,15 +83,16 @@ class Jota {
     }
 
     public String[][] ini() {
-        String posicion1 = "0,5";
-        String posicion2 = "1,5";
-        String posicion3 = "2,5";
-        String posicion4 = "2,4";
+        String posicion1 = "20,5";
+        String posicion2 = "21,5";
+        String posicion3 = "22,5";
+        String posicion4 = "22,4";
         String[][] ficha = {
             {null, posicion1, null},
             {null, posicion2, null},
             {posicion4, posicion3, null}
         };
+        
         return ficha;
     }
 }

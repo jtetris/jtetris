@@ -11,9 +11,9 @@ import java.util.*;
  *
  * @author Administrador
  */
-public class Bajar {
+public class ClsXIzquierda {
 
-    public String[][] bajar(String[][] Jota, int bajar) {
+    public String[][] izquierda(String[][] Jota) {
 
         //los null de la ficha de cabeza
         if (Jota[0][0] == null && Jota[0][2] == null && Jota[1][0] == null && Jota[1][2] == null && Jota[2][2] == null) {//posicion inicial _|
@@ -28,8 +28,8 @@ public class Bajar {
             for (int i = 0; i < strposicion1.length; i++) {
                 intposicion1[i] = Integer.parseInt(strposicion1[i]);
             }
-            intposicion1[0] = intposicion1[0] + bajar;
-            intposicion1[1] = intposicion1[1] + 0;
+            intposicion1[0] = intposicion1[0] + 0;
+            intposicion1[1] = intposicion1[1] - 1;
             String xposicion1 = Arrays.toString(intposicion1);
             posicion1 = xposicion1.replaceAll("\\[|\\]|\\s", "");
 
@@ -38,8 +38,8 @@ public class Bajar {
             for (int i = 0; i < strposicion2.length; i++) {
                 intposicion2[i] = Integer.parseInt(strposicion2[i]);
             }
-            intposicion2[0] = intposicion2[0] + bajar;
-            intposicion2[1] = intposicion2[1] + 0;
+            intposicion2[0] = intposicion2[0] + 0;
+            intposicion2[1] = intposicion2[1] - 1;
             String xposicion2 = Arrays.toString(intposicion2);
             posicion2 = xposicion2.replaceAll("\\[|\\]|\\s", "");
 
@@ -48,8 +48,8 @@ public class Bajar {
             for (int i = 0; i < strposicion3.length; i++) {
                 intposicion3[i] = Integer.parseInt(strposicion3[i]);
             }
-            intposicion3[0] = intposicion3[0] + bajar;
-            intposicion3[1] = intposicion3[1] + 0;
+            intposicion3[0] = intposicion3[0] + 0;
+            intposicion3[1] = intposicion3[1] - 1;
             String xposicion3 = Arrays.toString(intposicion3);
             posicion3 = xposicion3.replaceAll("\\[|\\]|\\s", "");
 
@@ -58,8 +58,8 @@ public class Bajar {
             for (int i = 0; i < strposicion4.length; i++) {
                 intposicion4[i] = Integer.parseInt(strposicion4[i]);
             }
-            intposicion4[0] = intposicion4[0] + bajar;
-            intposicion4[1] = intposicion4[1] + 0;
+            intposicion4[0] = intposicion4[0] + 0;
+            intposicion4[1] = intposicion4[1] - 1;
             String xposicion4 = Arrays.toString(intposicion4);
             posicion4 = xposicion4.replaceAll("\\[|\\]|\\s", "");
             //posicion resultante en jota acostada a la izquieda
@@ -83,8 +83,8 @@ public class Bajar {
             for (int i = 0; i < strposicion1.length; i++) {
                 intposicion1[i] = Integer.parseInt(strposicion1[i]);
             }
-            intposicion1[0] = intposicion1[0] + bajar;
-            intposicion1[1] = intposicion1[1] + 0;
+            intposicion1[0] = intposicion1[0] + 0;
+            intposicion1[1] = intposicion1[1] - 1;
             String xposicion1 = Arrays.toString(intposicion1);
             posicion1 = xposicion1.replaceAll("\\[|\\]|\\s", "");
 
@@ -93,8 +93,8 @@ public class Bajar {
             for (int i = 0; i < strposicion2.length; i++) {
                 intposicion2[i] = Integer.parseInt(strposicion2[i]);
             }
-            intposicion2[0] = intposicion2[0] + bajar;
-            intposicion2[1] = intposicion2[1] + 0;
+            intposicion2[0] = intposicion2[0] + 0;
+            intposicion2[1] = intposicion2[1] - 1;
             String xposicion2 = Arrays.toString(intposicion2);
             posicion2 = xposicion2.replaceAll("\\[|\\]|\\s", "");
 
@@ -103,8 +103,8 @@ public class Bajar {
             for (int i = 0; i < strposicion3.length; i++) {
                 intposicion3[i] = Integer.parseInt(strposicion3[i]);
             }
-            intposicion3[0] = intposicion3[0] + bajar;
-            intposicion3[1] = intposicion3[1] + 0;
+            intposicion3[0] = intposicion3[0] + 0;
+            intposicion3[1] = intposicion3[1] - 1;
             String xposicion3 = Arrays.toString(intposicion3);
             posicion3 = xposicion3.replaceAll("\\[|\\]|\\s", "");
 
@@ -113,8 +113,8 @@ public class Bajar {
             for (int i = 0; i < strposicion4.length; i++) {
                 intposicion4[i] = Integer.parseInt(strposicion4[i]);
             }
-            intposicion4[0] = intposicion4[0] + bajar;
-            intposicion4[1] = intposicion4[1] + 0;
+            intposicion4[0] = intposicion4[0] + 0;
+            intposicion4[1] = intposicion4[1] - 1;
             String xposicion4 = Arrays.toString(intposicion4);
             posicion4 = xposicion4.replaceAll("\\[|\\]|\\s", "");
 
@@ -139,8 +139,8 @@ public class Bajar {
             for (int i = 0; i < strposicion1.length; i++) {
                 intposicion1[i] = Integer.parseInt(strposicion1[i]);
             }
-            intposicion1[0] = intposicion1[0] + bajar;
-            intposicion1[1] = intposicion1[1] + 0;
+            intposicion1[0] = intposicion1[0] + 0;
+            intposicion1[1] = intposicion1[1] - 1;
             String xposicion1 = Arrays.toString(intposicion1);
             posicion1 = xposicion1.replaceAll("\\[|\\]|\\s", "");
 
@@ -149,8 +149,8 @@ public class Bajar {
             for (int i = 0; i < strposicion2.length; i++) {
                 intposicion2[i] = Integer.parseInt(strposicion2[i]);
             }
-            intposicion2[0] = intposicion2[0] + bajar;
-            intposicion2[1] = intposicion2[1] + 0;
+            intposicion2[0] = intposicion2[0] + 0;
+            intposicion2[1] = intposicion2[1] - 1;
             String xposicion2 = Arrays.toString(intposicion2);
             posicion2 = xposicion2.replaceAll("\\[|\\]|\\s", "");
 
@@ -159,8 +159,8 @@ public class Bajar {
             for (int i = 0; i < strposicion3.length; i++) {
                 intposicion3[i] = Integer.parseInt(strposicion3[i]);
             }
-            intposicion3[0] = intposicion3[0] + bajar;
-            intposicion3[1] = intposicion3[1] + 0;
+            intposicion3[0] = intposicion3[0] + 0;
+            intposicion3[1] = intposicion3[1] - 1;
             String xposicion3 = Arrays.toString(intposicion3);
             posicion3 = xposicion3.replaceAll("\\[|\\]|\\s", "");
 
@@ -169,8 +169,8 @@ public class Bajar {
             for (int i = 0; i < strposicion4.length; i++) {
                 intposicion4[i] = Integer.parseInt(strposicion4[i]);
             }
-            intposicion4[0] = intposicion4[0] + bajar;
-            intposicion4[1] = intposicion4[1] + 0;
+            intposicion4[0] = intposicion4[0] + 0;
+            intposicion4[1] = intposicion4[1] - 1;
             String xposicion4 = Arrays.toString(intposicion4);
             posicion4 = xposicion4.replaceAll("\\[|\\]|\\s", "");
 
@@ -195,8 +195,8 @@ public class Bajar {
             for (int i = 0; i < strposicion1.length; i++) {
                 intposicion1[i] = Integer.parseInt(strposicion1[i]);
             }
-            intposicion1[0] = intposicion1[0] + bajar;
-            intposicion1[1] = intposicion1[1] + 0;
+            intposicion1[0] = intposicion1[0] + 0;
+            intposicion1[1] = intposicion1[1] - 1;
             String xposicion1 = Arrays.toString(intposicion1);
             posicion1 = xposicion1.replaceAll("\\[|\\]|\\s", "");
 
@@ -205,8 +205,8 @@ public class Bajar {
             for (int i = 0; i < strposicion2.length; i++) {
                 intposicion2[i] = Integer.parseInt(strposicion2[i]);
             }
-            intposicion2[0] = intposicion2[0] + bajar;
-            intposicion2[1] = intposicion2[1] + 0;
+            intposicion2[0] = intposicion2[0] + 0;
+            intposicion2[1] = intposicion2[1] - 1;
             String xposicion2 = Arrays.toString(intposicion2);
             posicion2 = xposicion2.replaceAll("\\[|\\]|\\s", "");
 
@@ -215,8 +215,8 @@ public class Bajar {
             for (int i = 0; i < strposicion3.length; i++) {
                 intposicion3[i] = Integer.parseInt(strposicion3[i]);
             }
-            intposicion3[0] = intposicion3[0] + bajar;
-            intposicion3[1] = intposicion3[1] + 0;
+            intposicion3[0] = intposicion3[0] + 0;
+            intposicion3[1] = intposicion3[1] - 1;
             String xposicion3 = Arrays.toString(intposicion3);
             posicion3 = xposicion3.replaceAll("\\[|\\]|\\s", "");
 
@@ -225,8 +225,8 @@ public class Bajar {
             for (int i = 0; i < strposicion4.length; i++) {
                 intposicion4[i] = Integer.parseInt(strposicion4[i]);
             }
-            intposicion4[0] = intposicion4[0] + bajar;
-            intposicion4[1] = intposicion4[1] + 0;
+            intposicion4[0] = intposicion4[0] + 0;
+            intposicion4[1] = intposicion4[1] - 1;
             String xposicion4 = Arrays.toString(intposicion4);
             posicion4 = xposicion4.replaceAll("\\[|\\]|\\s", "");
 
