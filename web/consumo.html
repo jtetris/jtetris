@@ -19,7 +19,7 @@ function consumir(){
         $.ajax({
                 type: "GET",
                 contentType: 'application/json',
-                url: "http://192.168.0.15:9090/TetrisJ/webservice/bajar",
+                url: "http://localhost:9090/TetrisJ/webservice/bajar",
 				data:"",
                 success: function (data) {
                    alert("bien"+ data[0]);
