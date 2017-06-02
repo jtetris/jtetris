@@ -12,6 +12,8 @@ import javax.json.JsonObject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import jdk.nashorn.internal.parser.JSONParser;
 import jota.ClsXBajar;
 
@@ -29,8 +31,8 @@ public class Bajar {
      * @return objeto JSON con la Matriz de 3 x 3 con el tetromino representado en posiciones String
      */
     @GET       
-    @Produces ("application/json")
-    public String bajar() {        
+    @Produces (MediaType.APPLICATION_JSON)
+    public Response bajar() {        
         String pos1 = "20,5";
         String pos2 = "21,5";
         String pos3 = "22,5";
@@ -45,7 +47,8 @@ public class Bajar {
         Jota = clbajar.bajar(Jota, bajar);
          Gson gson=new GsonBuilder().create();
          String jsonArray=gson.toJson(Jota);
-        return jsonArray;
+        return Response.ok(jsonArray)
+                .header("Access-Control-Allow-Origin", "*").build();
     }
 
 }
